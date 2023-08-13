@@ -1,0 +1,6 @@
+albumentations
+jupyter
+tqdm
+matplotlib
+pytorch-lightning
+torch-lr-finder
