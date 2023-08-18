@@ -216,7 +216,7 @@ class Lightning_YOLO(LightningModule):
                                  })
         thresh = 0.6
         iou_thresh = 0.5
-        if batch_idx%516==0 and batch_idx!=0:
+        if batch_idx%517==0 and batch_idx!=0:
             bboxes = [[] for _ in range(x.shape[0])]
             for i in range(3):
                 batch_size, A, S, _, _ = out[i].shape
@@ -283,7 +283,7 @@ class Lightning_YOLO(LightningModule):
         self.log(f"{stage} loss",loss.item())
         thresh = 0.6
         iou_thresh = 0.5
-        if batch_idx%516==0 and batch_idx!=0:
+        if batch_idx%517==0 and batch_idx!=0:
             bboxes = [[] for _ in range(x.shape[0])]
             for i in range(3):
                 batch_size, A, S, _, _ = out[i].shape
@@ -318,7 +318,7 @@ class Lightning_YOLO(LightningModule):
             optimizer,
             max_lr=1E-3,
             # steps_per_epoch=len(train_loader),
-            steps_per_epoch=518,
+            steps_per_epoch=519,
             epochs=EPOCHS,
             pct_start=5/EPOCHS,
             div_factor=100,

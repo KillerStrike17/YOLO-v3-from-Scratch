@@ -61,8 +61,6 @@ train_transforms = A.Compose(
         A.Posterize(p=0.1),
         A.ToGray(p=0.1),
         A.ChannelShuffle(p=0.05),
-        A.RandomResizedCrop(height=IMAGE_SIZE, width=IMAGE_SIZE,p=1, scale=(0.08, 1.0), ratio=(0.75, 1.3333333333333333)),
-        # A.RandomSizedBBoxSafeCrop (height=IMAGE_SIZE, width=IMAGE_SIZE,p=0.5),
         A.Normalize(mean=[0, 0, 0], std=[1, 1, 1], max_pixel_value=255,),
         ToTensorV2(),
     ],
