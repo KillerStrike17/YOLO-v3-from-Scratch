@@ -1,0 +1,459 @@
+2023-08-22 21:20:31,508 INFO    StreamThr :3336 [internal.py:wandb_internal():86] W&B internal server running at pid: 3336, started at: 2023-08-22 21:20:31.507231
+2023-08-22 21:20:31,509 DEBUG   HandlerThread:3336 [handler.py:handle_request():144] handle_request: status
+2023-08-22 21:20:31,513 INFO    WriterThread:3336 [datastore.py:open_for_write():85] open: .\wandb\run-20230822_212031-vf9fg63b\run-vf9fg63b.wandb
+2023-08-22 21:20:31,513 DEBUG   SenderThread:3336 [sender.py:send():379] send: header
+2023-08-22 21:20:31,546 DEBUG   SenderThread:3336 [sender.py:send():379] send: run
+2023-08-22 21:20:31,547 INFO    SenderThread:3336 [sender.py:_maybe_setup_resume():758] checking resume status for None/lightning_logs/vf9fg63b
+2023-08-22 21:20:32,804 INFO    SenderThread:3336 [dir_watcher.py:__init__():211] watching files in: .\wandb\run-20230822_212031-vf9fg63b\files
+2023-08-22 21:20:32,805 INFO    SenderThread:3336 [sender.py:_start_run_threads():1121] run started: vf9fg63b with start time 1692719431.509231
+2023-08-22 21:20:32,806 DEBUG   SenderThread:3336 [sender.py:send_request():406] send_request: summary_record
+2023-08-22 21:20:32,806 INFO    SenderThread:3336 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-08-22 21:20:32,814 DEBUG   HandlerThread:3336 [handler.py:handle_request():144] handle_request: check_version
+2023-08-22 21:20:32,814 DEBUG   SenderThread:3336 [sender.py:send_request():406] send_request: check_version
+2023-08-22 21:20:33,182 DEBUG   HandlerThread:3336 [handler.py:handle_request():144] handle_request: run_start
+2023-08-22 21:20:33,213 DEBUG   HandlerThread:3336 [system_info.py:__init__():31] System info init
+2023-08-22 21:20:33,214 DEBUG   HandlerThread:3336 [system_info.py:__init__():46] System info init done
+2023-08-22 21:20:33,214 INFO    HandlerThread:3336 [system_monitor.py:start():181] Starting system monitor
+2023-08-22 21:20:33,214 INFO    SystemMonitor:3336 [system_monitor.py:_start():145] Starting system asset monitoring threads
+2023-08-22 21:20:33,214 INFO    HandlerThread:3336 [system_monitor.py:probe():201] Collecting system info
+2023-08-22 21:20:33,216 INFO    SystemMonitor:3336 [interfaces.py:start():190] Started cpu monitoring
+2023-08-22 21:20:33,217 INFO    SystemMonitor:3336 [interfaces.py:start():190] Started disk monitoring
+2023-08-22 21:20:33,217 INFO    SystemMonitor:3336 [interfaces.py:start():190] Started gpu monitoring
+2023-08-22 21:20:33,223 INFO    SystemMonitor:3336 [interfaces.py:start():190] Started memory monitoring
+2023-08-22 21:20:33,232 INFO    SystemMonitor:3336 [interfaces.py:start():190] Started network monitoring
+2023-08-22 21:20:33,245 DEBUG   HandlerThread:3336 [system_info.py:probe():195] Probing system
+2023-08-22 21:20:33,246 DEBUG   HandlerThread:3336 [system_info.py:_probe_git():180] Probing git
+2023-08-22 21:20:33,311 DEBUG   HandlerThread:3336 [system_info.py:_probe_git():188] Probing git done
+2023-08-22 21:20:33,311 DEBUG   HandlerThread:3336 [system_info.py:probe():240] Probing system done
+2023-08-22 21:20:33,311 DEBUG   HandlerThread:3336 [system_monitor.py:probe():210] {'os': 'Windows-10-10.0.22621-SP0', 'python': '3.10.12', 'heartbeatAt': '2023-08-22T15:50:33.245009', 'startedAt': '2023-08-22T15:50:31.501233', 'docker': None, 'cuda': None, 'args': (), 'state': 'running', 'program': '<python with no main file>', 'git': {'remote': 'https://github.com/KillerStrike17/YOLO-v3-from-Scratch.git', 'commit': '23fc9ace880707207d1d624394594d173d945337'}, 'email': 'shubham.agnihotri1997@gmail.com', 'root': 'D:/Github/YOLO-v3-from-Scratch', 'host': 'DESKTOP-73R3I2T', 'username': 'this pc', 'executable': 'd:\\Anaconda\\envs\\theschoolofai\\python.exe', 'cpu_count': 8, 'cpu_count_logical': 16, 'cpu_freq': {'current': 3600.0, 'min': 0.0, 'max': 3600.0}, 'cpu_freq_per_core': [{'current': 3600.0, 'min': 0.0, 'max': 3600.0}], 'disk': {'total': 495.81249618530273, 'used': 489.5328903198242}, 'gpu': 'NVIDIA GeForce RTX 2080 Ti', 'gpu_count': 1, 'gpu_devices': [{'name': 'NVIDIA GeForce RTX 2080 Ti', 'memory_total': 11811160064}], 'memory': {'total': 31.93851089477539}}
+2023-08-22 21:20:33,311 INFO    HandlerThread:3336 [system_monitor.py:probe():211] Finished collecting system info
+2023-08-22 21:20:33,311 INFO    HandlerThread:3336 [system_monitor.py:probe():214] Publishing system info
+2023-08-22 21:20:33,311 DEBUG   HandlerThread:3336 [system_info.py:_save_pip():51] Saving list of pip packages installed into the current environment
+2023-08-22 21:20:33,311 DEBUG   HandlerThread:3336 [system_info.py:_save_pip():67] Saving pip packages done
+2023-08-22 21:20:33,311 DEBUG   HandlerThread:3336 [system_info.py:_save_conda():74] Saving list of conda packages installed into the current environment
+2023-08-22 21:20:33,314 ERROR   HandlerThread:3336 [system_info.py:_save_conda():85] Error saving conda packages: [WinError 2] The system cannot find the file specified
+Traceback (most recent call last):
+  File "d:\Anaconda\envs\theschoolofai\lib\site-packages\wandb\sdk\internal\system\system_info.py", line 81, in _save_conda
+    subprocess.call(
+  File "d:\Anaconda\envs\theschoolofai\lib\subprocess.py", line 345, in call
+    with Popen(*popenargs, **kwargs) as p:
+  File "d:\Anaconda\envs\theschoolofai\lib\subprocess.py", line 971, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "d:\Anaconda\envs\theschoolofai\lib\subprocess.py", line 1456, in _execute_child
+    hp, ht, pid, tid = _winapi.CreateProcess(executable, args,
+FileNotFoundError: [WinError 2] The system cannot find the file specified
+2023-08-22 21:20:33,346 DEBUG   HandlerThread:3336 [system_info.py:_save_conda():86] Saving conda packages done
+2023-08-22 21:20:33,347 INFO    HandlerThread:3336 [system_monitor.py:probe():216] Finished publishing system info
+2023-08-22 21:20:33,351 DEBUG   SenderThread:3336 [sender.py:send():379] send: files
+2023-08-22 21:20:33,351 INFO    SenderThread:3336 [sender.py:_save_file():1375] saving file wandb-metadata.json with policy now
+2023-08-22 21:20:33,362 DEBUG   HandlerThread:3336 [handler.py:handle_request():144] handle_request: stop_status
+2023-08-22 21:20:33,362 DEBUG   SenderThread:3336 [sender.py:send_request():406] send_request: stop_status
+2023-08-22 21:20:33,364 DEBUG   HandlerThread:3336 [handler.py:handle_request():144] handle_request: pause
+2023-08-22 21:20:33,365 INFO    HandlerThread:3336 [handler.py:handle_request_pause():728] stopping system metrics thread or process
+2023-08-22 21:20:33,365 INFO    HandlerThread:3336 [system_monitor.py:finish():190] Stopping system monitor
+2023-08-22 21:20:33,365 DEBUG   SystemMonitor:3336 [system_monitor.py:_start():159] Starting system metrics aggregation loop
+2023-08-22 21:20:33,370 DEBUG   SystemMonitor:3336 [system_monitor.py:_start():166] Finished system metrics aggregation loop
+2023-08-22 21:20:33,370 DEBUG   SystemMonitor:3336 [system_monitor.py:_start():170] Publishing last batch of metrics
+2023-08-22 21:20:33,371 INFO    HandlerThread:3336 [interfaces.py:finish():202] Joined cpu monitor
+2023-08-22 21:20:33,371 INFO    HandlerThread:3336 [interfaces.py:finish():202] Joined disk monitor
+2023-08-22 21:20:33,413 INFO    HandlerThread:3336 [interfaces.py:finish():202] Joined gpu monitor
+2023-08-22 21:20:33,414 INFO    HandlerThread:3336 [interfaces.py:finish():202] Joined memory monitor
+2023-08-22 21:20:33,414 INFO    HandlerThread:3336 [interfaces.py:finish():202] Joined network monitor
+2023-08-22 21:20:33,836 INFO    Thread-16 :3336 [dir_watcher.py:_on_file_created():271] file/dir created: .\wandb\run-20230822_212031-vf9fg63b\files\requirements.txt
+2023-08-22 21:20:33,836 INFO    Thread-16 :3336 [dir_watcher.py:_on_file_created():271] file/dir created: .\wandb\run-20230822_212031-vf9fg63b\files\conda-environment.yaml
+2023-08-22 21:20:33,836 INFO    Thread-16 :3336 [dir_watcher.py:_on_file_created():271] file/dir created: .\wandb\run-20230822_212031-vf9fg63b\files\wandb-summary.json
+2023-08-22 21:20:33,837 INFO    Thread-16 :3336 [dir_watcher.py:_on_file_created():271] file/dir created: .\wandb\run-20230822_212031-vf9fg63b\files\wandb-metadata.json
+2023-08-22 21:20:34,019 DEBUG   SenderThread:3336 [sender.py:send():379] send: telemetry
+2023-08-22 21:20:34,019 DEBUG   SenderThread:3336 [sender.py:send():379] send: metric
+2023-08-22 21:20:34,019 DEBUG   SenderThread:3336 [sender.py:send():379] send: telemetry
+2023-08-22 21:20:34,019 DEBUG   SenderThread:3336 [sender.py:send():379] send: metric
+2023-08-22 21:20:34,019 WARNING SenderThread:3336 [sender.py:send_metric():1326] Seen metric with glob (shouldn't happen)
+2023-08-22 21:20:34,020 DEBUG   SenderThread:3336 [sender.py:send():379] send: stats
+2023-08-22 21:20:34,748 INFO    wandb-upload_0:3336 [upload_job.py:push():131] Uploaded file C:\Users\THISPC~1\AppData\Local\Temp\tmpaio137h7wandb\tpczi1lj-wandb-metadata.json
+2023-08-22 21:20:37,042 DEBUG   HandlerThread:3336 [handler.py:handle_request():144] handle_request: status_report
+2023-08-22 21:20:41,524 DEBUG   HandlerThread:3336 [handler.py:handle_request():144] handle_request: resume
+2023-08-22 21:20:41,525 INFO    HandlerThread:3336 [handler.py:handle_request_resume():719] starting system metrics thread or process
+2023-08-22 21:20:41,525 INFO    HandlerThread:3336 [system_monitor.py:start():181] Starting system monitor
+2023-08-22 21:20:41,525 INFO    SystemMonitor:3336 [system_monitor.py:_start():145] Starting system asset monitoring threads
+2023-08-22 21:20:41,529 INFO    SystemMonitor:3336 [interfaces.py:start():190] Started cpu monitoring
+2023-08-22 21:20:41,529 INFO    SystemMonitor:3336 [interfaces.py:start():190] Started disk monitoring
+2023-08-22 21:20:41,529 INFO    SystemMonitor:3336 [interfaces.py:start():190] Started gpu monitoring
+2023-08-22 21:20:41,534 INFO    SystemMonitor:3336 [interfaces.py:start():190] Started memory monitoring
+2023-08-22 21:20:41,545 INFO    SystemMonitor:3336 [interfaces.py:start():190] Started network monitoring
+2023-08-22 21:20:41,924 INFO    Thread-16 :3336 [dir_watcher.py:_on_file_created():271] file/dir created: .\wandb\run-20230822_212031-vf9fg63b\files\output.log
+2023-08-22 21:20:42,059 DEBUG   HandlerThread:3336 [handler.py:handle_request():144] handle_request: status_report
+2023-08-22 21:20:43,928 INFO    Thread-16 :3336 [dir_watcher.py:_on_file_modified():288] file/dir modified: .\wandb\run-20230822_212031-vf9fg63b\files\output.log
+2023-08-22 21:20:45,955 INFO    Thread-16 :3336 [dir_watcher.py:_on_file_modified():288] file/dir modified: .\wandb\run-20230822_212031-vf9fg63b\files\output.log
+2023-08-22 21:20:47,303 DEBUG   HandlerThread:3336 [handler.py:handle_request():144] handle_request: status_report
+2023-08-22 21:20:48,372 DEBUG   HandlerThread:3336 [handler.py:handle_request():144] handle_request: stop_status
+2023-08-22 21:20:48,372 DEBUG   SenderThread:3336 [sender.py:send_request():406] send_request: stop_status
+2023-08-22 21:20:52,710 DEBUG   HandlerThread:3336 [handler.py:handle_request():144] handle_request: status_report
+2023-08-22 21:20:57,720 DEBUG   HandlerThread:3336 [handler.py:handle_request():144] handle_request: status_report
+2023-08-22 21:21:02,763 DEBUG   HandlerThread:3336 [handler.py:handle_request():144] handle_request: status_report
+2023-08-22 21:21:03,379 DEBUG   HandlerThread:3336 [handler.py:handle_request():144] handle_request: stop_status
+2023-08-22 21:21:03,380 DEBUG   SenderThread:3336 [sender.py:send_request():406] send_request: stop_status
+2023-08-22 21:21:04,031 INFO    Thread-16 :3336 [dir_watcher.py:_on_file_modified():288] file/dir modified: .\wandb\run-20230822_212031-vf9fg63b\files\config.yaml
+2023-08-22 21:21:08,761 DEBUG   HandlerThread:3336 [handler.py:handle_request():144] handle_request: status_report
+2023-08-22 21:21:13,803 DEBUG   HandlerThread:3336 [handler.py:handle_request():144] handle_request: status_report
+2023-08-22 21:21:18,379 DEBUG   HandlerThread:3336 [handler.py:handle_request():144] handle_request: stop_status
+2023-08-22 21:21:18,380 DEBUG   SenderThread:3336 [sender.py:send_request():406] send_request: stop_status
+2023-08-22 21:21:19,805 DEBUG   HandlerThread:3336 [handler.py:handle_request():144] handle_request: status_report
+2023-08-22 21:21:24,845 DEBUG   HandlerThread:3336 [handler.py:handle_request():144] handle_request: status_report
+2023-08-22 21:21:29,866 DEBUG   HandlerThread:3336 [handler.py:handle_request():144] handle_request: status_report
+2023-08-22 21:21:33,394 DEBUG   HandlerThread:3336 [handler.py:handle_request():144] handle_request: stop_status
+2023-08-22 21:21:33,395 DEBUG   SenderThread:3336 [sender.py:send_request():406] send_request: stop_status
+2023-08-22 21:21:35,778 DEBUG   HandlerThread:3336 [handler.py:handle_request():144] handle_request: status_report
+2023-08-22 21:21:40,808 DEBUG   HandlerThread:3336 [handler.py:handle_request():144] handle_request: status_report
+2023-08-22 21:21:41,554 DEBUG   SystemMonitor:3336 [system_monitor.py:_start():159] Starting system metrics aggregation loop
+2023-08-22 21:21:41,555 DEBUG   SenderThread:3336 [sender.py:send():379] send: stats
+2023-08-22 21:21:44,323 INFO    Thread-16 :3336 [dir_watcher.py:_on_file_modified():288] file/dir modified: .\wandb\run-20230822_212031-vf9fg63b\files\output.log
+2023-08-22 21:21:46,333 INFO    Thread-16 :3336 [dir_watcher.py:_on_file_modified():288] file/dir modified: .\wandb\run-20230822_212031-vf9fg63b\files\output.log
+2023-08-22 21:21:46,447 DEBUG   HandlerThread:3336 [handler.py:handle_request():144] handle_request: status_report
+2023-08-22 21:21:48,339 INFO    Thread-16 :3336 [dir_watcher.py:_on_file_modified():288] file/dir modified: .\wandb\run-20230822_212031-vf9fg63b\files\output.log
+2023-08-22 21:21:48,401 DEBUG   HandlerThread:3336 [handler.py:handle_request():144] handle_request: stop_status
+2023-08-22 21:21:48,402 DEBUG   SenderThread:3336 [sender.py:send_request():406] send_request: stop_status
+2023-08-22 21:21:51,818 DEBUG   HandlerThread:3336 [handler.py:handle_request():144] handle_request: status_report
+2023-08-22 21:21:56,868 DEBUG   HandlerThread:3336 [handler.py:handle_request():144] handle_request: status_report
+2023-08-22 21:22:01,900 DEBUG   HandlerThread:3336 [handler.py:handle_request():144] handle_request: status_report
+2023-08-22 21:22:03,404 DEBUG   HandlerThread:3336 [handler.py:handle_request():144] handle_request: stop_status
+2023-08-22 21:22:03,405 DEBUG   SenderThread:3336 [sender.py:send_request():406] send_request: stop_status
+2023-08-22 21:22:07,783 DEBUG   HandlerThread:3336 [handler.py:handle_request():144] handle_request: status_report
+2023-08-22 21:22:11,570 DEBUG   SenderThread:3336 [sender.py:send():379] send: stats
+2023-08-22 21:22:13,283 DEBUG   HandlerThread:3336 [handler.py:handle_request():144] handle_request: status_report
+2023-08-22 21:22:14,542 INFO    Thread-16 :3336 [dir_watcher.py:_on_file_modified():288] file/dir modified: .\wandb\run-20230822_212031-vf9fg63b\files\output.log
+2023-08-22 21:22:18,328 DEBUG   HandlerThread:3336 [handler.py:handle_request():144] handle_request: status_report
+2023-08-22 21:22:18,421 DEBUG   HandlerThread:3336 [handler.py:handle_request():144] handle_request: stop_status
+2023-08-22 21:22:18,422 DEBUG   SenderThread:3336 [sender.py:send_request():406] send_request: stop_status
+2023-08-22 21:22:23,768 DEBUG   HandlerThread:3336 [handler.py:handle_request():144] handle_request: status_report
+2023-08-22 21:22:28,805 DEBUG   HandlerThread:3336 [handler.py:handle_request():144] handle_request: status_report
+2023-08-22 21:22:33,443 DEBUG   HandlerThread:3336 [handler.py:handle_request():144] handle_request: stop_status
+2023-08-22 21:22:33,443 DEBUG   SenderThread:3336 [sender.py:send_request():406] send_request: stop_status
+2023-08-22 21:22:33,843 DEBUG   HandlerThread:3336 [handler.py:handle_request():144] handle_request: status_report
+2023-08-22 21:22:38,888 DEBUG   HandlerThread:3336 [handler.py:handle_request():144] handle_request: status_report
+2023-08-22 21:22:41,574 DEBUG   SenderThread:3336 [sender.py:send():379] send: stats
+2023-08-22 21:22:41,763 INFO    Thread-16 :3336 [dir_watcher.py:_on_file_modified():288] file/dir modified: .\wandb\run-20230822_212031-vf9fg63b\files\output.log
+2023-08-22 21:22:42,773 INFO    Thread-16 :3336 [dir_watcher.py:_on_file_modified():288] file/dir modified: .\wandb\run-20230822_212031-vf9fg63b\files\output.log
+2023-08-22 21:22:43,789 INFO    Thread-16 :3336 [dir_watcher.py:_on_file_modified():288] file/dir modified: .\wandb\run-20230822_212031-vf9fg63b\files\output.log
+2023-08-22 21:22:43,942 DEBUG   HandlerThread:3336 [handler.py:handle_request():144] handle_request: status_report
+2023-08-22 21:22:45,804 INFO    Thread-16 :3336 [dir_watcher.py:_on_file_modified():288] file/dir modified: .\wandb\run-20230822_212031-vf9fg63b\files\output.log
+2023-08-22 21:22:47,813 INFO    Thread-16 :3336 [dir_watcher.py:_on_file_modified():288] file/dir modified: .\wandb\run-20230822_212031-vf9fg63b\files\output.log
+2023-08-22 21:22:48,446 DEBUG   HandlerThread:3336 [handler.py:handle_request():144] handle_request: stop_status
+2023-08-22 21:22:48,446 DEBUG   SenderThread:3336 [sender.py:send_request():406] send_request: stop_status
+2023-08-22 21:22:49,017 DEBUG   HandlerThread:3336 [handler.py:handle_request():144] handle_request: status_report
+2023-08-22 21:22:49,837 INFO    Thread-16 :3336 [dir_watcher.py:_on_file_modified():288] file/dir modified: .\wandb\run-20230822_212031-vf9fg63b\files\output.log
+2023-08-22 21:22:51,848 INFO    Thread-16 :3336 [dir_watcher.py:_on_file_modified():288] file/dir modified: .\wandb\run-20230822_212031-vf9fg63b\files\output.log
+2023-08-22 21:22:53,859 INFO    Thread-16 :3336 [dir_watcher.py:_on_file_modified():288] file/dir modified: .\wandb\run-20230822_212031-vf9fg63b\files\output.log
+2023-08-22 21:22:54,156 DEBUG   HandlerThread:3336 [handler.py:handle_request():144] handle_request: status_report
+2023-08-22 21:22:55,871 INFO    Thread-16 :3336 [dir_watcher.py:_on_file_modified():288] file/dir modified: .\wandb\run-20230822_212031-vf9fg63b\files\output.log
+2023-08-22 21:22:57,895 INFO    Thread-16 :3336 [dir_watcher.py:_on_file_modified():288] file/dir modified: .\wandb\run-20230822_212031-vf9fg63b\files\output.log
+2023-08-22 21:22:59,648 DEBUG   HandlerThread:3336 [handler.py:handle_request():144] handle_request: status_report
+2023-08-22 21:22:59,904 INFO    Thread-16 :3336 [dir_watcher.py:_on_file_modified():288] file/dir modified: .\wandb\run-20230822_212031-vf9fg63b\files\output.log
+2023-08-22 21:23:01,920 INFO    Thread-16 :3336 [dir_watcher.py:_on_file_modified():288] file/dir modified: .\wandb\run-20230822_212031-vf9fg63b\files\output.log
+2023-08-22 21:23:03,443 DEBUG   HandlerThread:3336 [handler.py:handle_request():144] handle_request: stop_status
+2023-08-22 21:23:03,443 DEBUG   SenderThread:3336 [sender.py:send_request():406] send_request: stop_status
+2023-08-22 21:23:03,932 INFO    Thread-16 :3336 [dir_watcher.py:_on_file_modified():288] file/dir modified: .\wandb\run-20230822_212031-vf9fg63b\files\output.log
+2023-08-22 21:23:04,975 DEBUG   HandlerThread:3336 [handler.py:handle_request():144] handle_request: status_report
+2023-08-22 21:23:05,943 INFO    Thread-16 :3336 [dir_watcher.py:_on_file_modified():288] file/dir modified: .\wandb\run-20230822_212031-vf9fg63b\files\output.log
+2023-08-22 21:23:10,377 DEBUG   HandlerThread:3336 [handler.py:handle_request():144] handle_request: status_report
+2023-08-22 21:23:11,587 DEBUG   SenderThread:3336 [sender.py:send():379] send: stats
+2023-08-22 21:23:12,873 INFO    Thread-16 :3336 [dir_watcher.py:_on_file_modified():288] file/dir modified: .\wandb\run-20230822_212031-vf9fg63b\files\output.log
+2023-08-22 21:23:13,884 INFO    Thread-16 :3336 [dir_watcher.py:_on_file_modified():288] file/dir modified: .\wandb\run-20230822_212031-vf9fg63b\files\output.log
+2023-08-22 21:23:14,890 INFO    Thread-16 :3336 [dir_watcher.py:_on_file_modified():288] file/dir modified: .\wandb\run-20230822_212031-vf9fg63b\files\output.log
+2023-08-22 21:23:15,833 DEBUG   HandlerThread:3336 [handler.py:handle_request():144] handle_request: status_report
+2023-08-22 21:23:16,901 INFO    Thread-16 :3336 [dir_watcher.py:_on_file_modified():288] file/dir modified: .\wandb\run-20230822_212031-vf9fg63b\files\output.log
+2023-08-22 21:23:18,461 DEBUG   HandlerThread:3336 [handler.py:handle_request():144] handle_request: stop_status
+2023-08-22 21:23:18,461 DEBUG   SenderThread:3336 [sender.py:send_request():406] send_request: stop_status
+2023-08-22 21:23:18,918 INFO    Thread-16 :3336 [dir_watcher.py:_on_file_modified():288] file/dir modified: .\wandb\run-20230822_212031-vf9fg63b\files\output.log
+2023-08-22 21:23:19,930 INFO    Thread-16 :3336 [dir_watcher.py:_on_file_modified():288] file/dir modified: .\wandb\run-20230822_212031-vf9fg63b\files\output.log
+2023-08-22 21:23:20,975 DEBUG   HandlerThread:3336 [handler.py:handle_request():144] handle_request: status_report
+2023-08-22 21:23:21,949 INFO    Thread-16 :3336 [dir_watcher.py:_on_file_modified():288] file/dir modified: .\wandb\run-20230822_212031-vf9fg63b\files\output.log
+2023-08-22 21:23:23,961 INFO    Thread-16 :3336 [dir_watcher.py:_on_file_modified():288] file/dir modified: .\wandb\run-20230822_212031-vf9fg63b\files\output.log
+2023-08-22 21:23:25,971 INFO    Thread-16 :3336 [dir_watcher.py:_on_file_modified():288] file/dir modified: .\wandb\run-20230822_212031-vf9fg63b\files\output.log
+2023-08-22 21:23:26,251 DEBUG   HandlerThread:3336 [handler.py:handle_request():144] handle_request: status_report
+2023-08-22 21:23:27,989 INFO    Thread-16 :3336 [dir_watcher.py:_on_file_modified():288] file/dir modified: .\wandb\run-20230822_212031-vf9fg63b\files\output.log
+2023-08-22 21:23:30,007 INFO    Thread-16 :3336 [dir_watcher.py:_on_file_modified():288] file/dir modified: .\wandb\run-20230822_212031-vf9fg63b\files\output.log
+2023-08-22 21:23:31,733 DEBUG   HandlerThread:3336 [handler.py:handle_request():144] handle_request: status_report
+2023-08-22 21:23:32,025 INFO    Thread-16 :3336 [dir_watcher.py:_on_file_modified():288] file/dir modified: .\wandb\run-20230822_212031-vf9fg63b\files\output.log
+2023-08-22 21:23:33,471 DEBUG   HandlerThread:3336 [handler.py:handle_request():144] handle_request: stop_status
+2023-08-22 21:23:33,471 DEBUG   SenderThread:3336 [sender.py:send_request():406] send_request: stop_status
+2023-08-22 21:23:34,037 INFO    Thread-16 :3336 [dir_watcher.py:_on_file_modified():288] file/dir modified: .\wandb\run-20230822_212031-vf9fg63b\files\output.log
+2023-08-22 21:23:36,053 INFO    Thread-16 :3336 [dir_watcher.py:_on_file_modified():288] file/dir modified: .\wandb\run-20230822_212031-vf9fg63b\files\output.log
+2023-08-22 21:23:37,044 DEBUG   HandlerThread:3336 [handler.py:handle_request():144] handle_request: status_report
+2023-08-22 21:23:38,079 INFO    Thread-16 :3336 [dir_watcher.py:_on_file_modified():288] file/dir modified: .\wandb\run-20230822_212031-vf9fg63b\files\output.log
+2023-08-22 21:23:40,095 INFO    Thread-16 :3336 [dir_watcher.py:_on_file_modified():288] file/dir modified: .\wandb\run-20230822_212031-vf9fg63b\files\output.log
+2023-08-22 21:23:41,602 DEBUG   SenderThread:3336 [sender.py:send():379] send: stats
+2023-08-22 21:23:42,121 INFO    Thread-16 :3336 [dir_watcher.py:_on_file_modified():288] file/dir modified: .\wandb\run-20230822_212031-vf9fg63b\files\output.log
+2023-08-22 21:23:42,594 DEBUG   HandlerThread:3336 [handler.py:handle_request():144] handle_request: status_report
+2023-08-22 21:23:44,138 INFO    Thread-16 :3336 [dir_watcher.py:_on_file_modified():288] file/dir modified: .\wandb\run-20230822_212031-vf9fg63b\files\output.log
+2023-08-22 21:23:46,156 INFO    Thread-16 :3336 [dir_watcher.py:_on_file_modified():288] file/dir modified: .\wandb\run-20230822_212031-vf9fg63b\files\output.log
+2023-08-22 21:23:47,793 DEBUG   HandlerThread:3336 [handler.py:handle_request():144] handle_request: status_report
+2023-08-22 21:23:48,177 INFO    Thread-16 :3336 [dir_watcher.py:_on_file_modified():288] file/dir modified: .\wandb\run-20230822_212031-vf9fg63b\files\output.log
+2023-08-22 21:23:48,486 DEBUG   HandlerThread:3336 [handler.py:handle_request():144] handle_request: stop_status
+2023-08-22 21:23:48,487 DEBUG   SenderThread:3336 [sender.py:send_request():406] send_request: stop_status
+2023-08-22 21:23:50,193 INFO    Thread-16 :3336 [dir_watcher.py:_on_file_modified():288] file/dir modified: .\wandb\run-20230822_212031-vf9fg63b\files\output.log
+2023-08-22 21:23:52,205 INFO    Thread-16 :3336 [dir_watcher.py:_on_file_modified():288] file/dir modified: .\wandb\run-20230822_212031-vf9fg63b\files\output.log
+2023-08-22 21:23:53,103 DEBUG   HandlerThread:3336 [handler.py:handle_request():144] handle_request: status_report
+2023-08-22 21:23:54,235 INFO    Thread-16 :3336 [dir_watcher.py:_on_file_modified():288] file/dir modified: .\wandb\run-20230822_212031-vf9fg63b\files\output.log
+2023-08-22 21:23:56,257 INFO    Thread-16 :3336 [dir_watcher.py:_on_file_modified():288] file/dir modified: .\wandb\run-20230822_212031-vf9fg63b\files\output.log
+2023-08-22 21:23:58,273 INFO    Thread-16 :3336 [dir_watcher.py:_on_file_modified():288] file/dir modified: .\wandb\run-20230822_212031-vf9fg63b\files\output.log
+2023-08-22 21:23:58,357 DEBUG   HandlerThread:3336 [handler.py:handle_request():144] handle_request: status_report
+2023-08-22 21:24:00,284 INFO    Thread-16 :3336 [dir_watcher.py:_on_file_modified():288] file/dir modified: .\wandb\run-20230822_212031-vf9fg63b\files\output.log
+2023-08-22 21:24:02,305 INFO    Thread-16 :3336 [dir_watcher.py:_on_file_modified():288] file/dir modified: .\wandb\run-20230822_212031-vf9fg63b\files\output.log
+2023-08-22 21:24:03,627 DEBUG   HandlerThread:3336 [handler.py:handle_request():144] handle_request: status_report
+2023-08-22 21:24:03,628 DEBUG   HandlerThread:3336 [handler.py:handle_request():144] handle_request: stop_status
+2023-08-22 21:24:03,628 DEBUG   SenderThread:3336 [sender.py:send_request():406] send_request: stop_status
+2023-08-22 21:24:04,318 INFO    Thread-16 :3336 [dir_watcher.py:_on_file_modified():288] file/dir modified: .\wandb\run-20230822_212031-vf9fg63b\files\output.log
+2023-08-22 21:24:06,338 INFO    Thread-16 :3336 [dir_watcher.py:_on_file_modified():288] file/dir modified: .\wandb\run-20230822_212031-vf9fg63b\files\output.log
+2023-08-22 21:24:08,354 INFO    Thread-16 :3336 [dir_watcher.py:_on_file_modified():288] file/dir modified: .\wandb\run-20230822_212031-vf9fg63b\files\output.log
+2023-08-22 21:24:08,832 DEBUG   HandlerThread:3336 [handler.py:handle_request():144] handle_request: status_report
+2023-08-22 21:24:10,369 INFO    Thread-16 :3336 [dir_watcher.py:_on_file_modified():288] file/dir modified: .\wandb\run-20230822_212031-vf9fg63b\files\output.log
+2023-08-22 21:24:11,613 DEBUG   SenderThread:3336 [sender.py:send():379] send: stats
+2023-08-22 21:24:12,384 INFO    Thread-16 :3336 [dir_watcher.py:_on_file_modified():288] file/dir modified: .\wandb\run-20230822_212031-vf9fg63b\files\output.log
+2023-08-22 21:24:14,078 DEBUG   HandlerThread:3336 [handler.py:handle_request():144] handle_request: status_report
+2023-08-22 21:24:14,402 INFO    Thread-16 :3336 [dir_watcher.py:_on_file_modified():288] file/dir modified: .\wandb\run-20230822_212031-vf9fg63b\files\output.log
+2023-08-22 21:24:16,420 INFO    Thread-16 :3336 [dir_watcher.py:_on_file_modified():288] file/dir modified: .\wandb\run-20230822_212031-vf9fg63b\files\output.log
+2023-08-22 21:24:18,439 INFO    Thread-16 :3336 [dir_watcher.py:_on_file_modified():288] file/dir modified: .\wandb\run-20230822_212031-vf9fg63b\files\output.log
+2023-08-22 21:24:18,774 DEBUG   HandlerThread:3336 [handler.py:handle_request():144] handle_request: stop_status
+2023-08-22 21:24:18,774 DEBUG   SenderThread:3336 [sender.py:send_request():406] send_request: stop_status
+2023-08-22 21:24:19,126 DEBUG   HandlerThread:3336 [handler.py:handle_request():144] handle_request: status_report
+2023-08-22 21:24:20,455 INFO    Thread-16 :3336 [dir_watcher.py:_on_file_modified():288] file/dir modified: .\wandb\run-20230822_212031-vf9fg63b\files\output.log
+2023-08-22 21:24:22,470 INFO    Thread-16 :3336 [dir_watcher.py:_on_file_modified():288] file/dir modified: .\wandb\run-20230822_212031-vf9fg63b\files\output.log
+2023-08-22 21:24:24,438 DEBUG   HandlerThread:3336 [handler.py:handle_request():144] handle_request: status_report
+2023-08-22 21:24:24,482 INFO    Thread-16 :3336 [dir_watcher.py:_on_file_modified():288] file/dir modified: .\wandb\run-20230822_212031-vf9fg63b\files\output.log
+2023-08-22 21:24:26,497 INFO    Thread-16 :3336 [dir_watcher.py:_on_file_modified():288] file/dir modified: .\wandb\run-20230822_212031-vf9fg63b\files\output.log
+2023-08-22 21:24:28,516 INFO    Thread-16 :3336 [dir_watcher.py:_on_file_modified():288] file/dir modified: .\wandb\run-20230822_212031-vf9fg63b\files\output.log
+2023-08-22 21:24:29,857 DEBUG   HandlerThread:3336 [handler.py:handle_request():144] handle_request: status_report
+2023-08-22 21:24:30,531 INFO    Thread-16 :3336 [dir_watcher.py:_on_file_modified():288] file/dir modified: .\wandb\run-20230822_212031-vf9fg63b\files\output.log
+2023-08-22 21:24:32,549 INFO    Thread-16 :3336 [dir_watcher.py:_on_file_modified():288] file/dir modified: .\wandb\run-20230822_212031-vf9fg63b\files\output.log
+2023-08-22 21:24:33,950 DEBUG   HandlerThread:3336 [handler.py:handle_request():144] handle_request: stop_status
+2023-08-22 21:24:33,950 DEBUG   SenderThread:3336 [sender.py:send_request():406] send_request: stop_status
+2023-08-22 21:24:34,565 INFO    Thread-16 :3336 [dir_watcher.py:_on_file_modified():288] file/dir modified: .\wandb\run-20230822_212031-vf9fg63b\files\output.log
+2023-08-22 21:24:35,075 DEBUG   HandlerThread:3336 [handler.py:handle_request():144] handle_request: status_report
+2023-08-22 21:24:36,588 INFO    Thread-16 :3336 [dir_watcher.py:_on_file_modified():288] file/dir modified: .\wandb\run-20230822_212031-vf9fg63b\files\output.log
+2023-08-22 21:24:38,594 INFO    Thread-16 :3336 [dir_watcher.py:_on_file_modified():288] file/dir modified: .\wandb\run-20230822_212031-vf9fg63b\files\output.log
+2023-08-22 21:24:40,321 DEBUG   HandlerThread:3336 [handler.py:handle_request():144] handle_request: status_report
+2023-08-22 21:24:40,614 INFO    Thread-16 :3336 [dir_watcher.py:_on_file_modified():288] file/dir modified: .\wandb\run-20230822_212031-vf9fg63b\files\output.log
+2023-08-22 21:24:41,624 DEBUG   SenderThread:3336 [sender.py:send():379] send: stats
+2023-08-22 21:24:42,631 INFO    Thread-16 :3336 [dir_watcher.py:_on_file_modified():288] file/dir modified: .\wandb\run-20230822_212031-vf9fg63b\files\output.log
+2023-08-22 21:24:44,656 INFO    Thread-16 :3336 [dir_watcher.py:_on_file_modified():288] file/dir modified: .\wandb\run-20230822_212031-vf9fg63b\files\output.log
+2023-08-22 21:24:45,497 DEBUG   HandlerThread:3336 [handler.py:handle_request():144] handle_request: status_report
+2023-08-22 21:24:46,666 INFO    Thread-16 :3336 [dir_watcher.py:_on_file_modified():288] file/dir modified: .\wandb\run-20230822_212031-vf9fg63b\files\output.log
+2023-08-22 21:24:48,677 INFO    Thread-16 :3336 [dir_watcher.py:_on_file_modified():288] file/dir modified: .\wandb\run-20230822_212031-vf9fg63b\files\output.log
+2023-08-22 21:24:49,221 DEBUG   HandlerThread:3336 [handler.py:handle_request():144] handle_request: stop_status
+2023-08-22 21:24:49,221 DEBUG   SenderThread:3336 [sender.py:send_request():406] send_request: stop_status
+2023-08-22 21:24:50,700 INFO    Thread-16 :3336 [dir_watcher.py:_on_file_modified():288] file/dir modified: .\wandb\run-20230822_212031-vf9fg63b\files\output.log
+2023-08-22 21:24:50,931 DEBUG   HandlerThread:3336 [handler.py:handle_request():144] handle_request: status_report
+2023-08-22 21:24:52,713 INFO    Thread-16 :3336 [dir_watcher.py:_on_file_modified():288] file/dir modified: .\wandb\run-20230822_212031-vf9fg63b\files\output.log
+2023-08-22 21:24:54,730 INFO    Thread-16 :3336 [dir_watcher.py:_on_file_modified():288] file/dir modified: .\wandb\run-20230822_212031-vf9fg63b\files\output.log
+2023-08-22 21:24:56,380 DEBUG   HandlerThread:3336 [handler.py:handle_request():144] handle_request: status_report
+2023-08-22 21:24:56,750 INFO    Thread-16 :3336 [dir_watcher.py:_on_file_modified():288] file/dir modified: .\wandb\run-20230822_212031-vf9fg63b\files\output.log
+2023-08-22 21:24:58,765 INFO    Thread-16 :3336 [dir_watcher.py:_on_file_modified():288] file/dir modified: .\wandb\run-20230822_212031-vf9fg63b\files\output.log
+2023-08-22 21:25:00,785 INFO    Thread-16 :3336 [dir_watcher.py:_on_file_modified():288] file/dir modified: .\wandb\run-20230822_212031-vf9fg63b\files\output.log
+2023-08-22 21:25:01,623 DEBUG   HandlerThread:3336 [handler.py:handle_request():144] handle_request: status_report
+2023-08-22 21:25:02,803 INFO    Thread-16 :3336 [dir_watcher.py:_on_file_modified():288] file/dir modified: .\wandb\run-20230822_212031-vf9fg63b\files\output.log
+2023-08-22 21:25:04,276 DEBUG   HandlerThread:3336 [handler.py:handle_request():144] handle_request: stop_status
+2023-08-22 21:25:04,276 DEBUG   SenderThread:3336 [sender.py:send_request():406] send_request: stop_status
+2023-08-22 21:25:04,813 INFO    Thread-16 :3336 [dir_watcher.py:_on_file_modified():288] file/dir modified: .\wandb\run-20230822_212031-vf9fg63b\files\output.log
+2023-08-22 21:25:06,829 INFO    Thread-16 :3336 [dir_watcher.py:_on_file_modified():288] file/dir modified: .\wandb\run-20230822_212031-vf9fg63b\files\output.log
+2023-08-22 21:25:06,853 DEBUG   HandlerThread:3336 [handler.py:handle_request():144] handle_request: status_report
+2023-08-22 21:25:08,843 INFO    Thread-16 :3336 [dir_watcher.py:_on_file_modified():288] file/dir modified: .\wandb\run-20230822_212031-vf9fg63b\files\output.log
+2023-08-22 21:25:10,859 INFO    Thread-16 :3336 [dir_watcher.py:_on_file_modified():288] file/dir modified: .\wandb\run-20230822_212031-vf9fg63b\files\output.log
+2023-08-22 21:25:11,633 DEBUG   SenderThread:3336 [sender.py:send():379] send: stats
+2023-08-22 21:25:12,000 DEBUG   HandlerThread:3336 [handler.py:handle_request():144] handle_request: status_report
+2023-08-22 21:25:12,880 INFO    Thread-16 :3336 [dir_watcher.py:_on_file_modified():288] file/dir modified: .\wandb\run-20230822_212031-vf9fg63b\files\output.log
+2023-08-22 21:25:14,892 INFO    Thread-16 :3336 [dir_watcher.py:_on_file_modified():288] file/dir modified: .\wandb\run-20230822_212031-vf9fg63b\files\output.log
+2023-08-22 21:25:16,902 INFO    Thread-16 :3336 [dir_watcher.py:_on_file_modified():288] file/dir modified: .\wandb\run-20230822_212031-vf9fg63b\files\output.log
+2023-08-22 21:25:17,493 DEBUG   HandlerThread:3336 [handler.py:handle_request():144] handle_request: status_report
+2023-08-22 21:25:18,925 INFO    Thread-16 :3336 [dir_watcher.py:_on_file_modified():288] file/dir modified: .\wandb\run-20230822_212031-vf9fg63b\files\output.log
+2023-08-22 21:25:19,409 DEBUG   HandlerThread:3336 [handler.py:handle_request():144] handle_request: stop_status
+2023-08-22 21:25:19,409 DEBUG   SenderThread:3336 [sender.py:send_request():406] send_request: stop_status
+2023-08-22 21:25:20,943 INFO    Thread-16 :3336 [dir_watcher.py:_on_file_modified():288] file/dir modified: .\wandb\run-20230822_212031-vf9fg63b\files\output.log
+2023-08-22 21:25:22,833 DEBUG   HandlerThread:3336 [handler.py:handle_request():144] handle_request: status_report
+2023-08-22 21:25:22,964 INFO    Thread-16 :3336 [dir_watcher.py:_on_file_modified():288] file/dir modified: .\wandb\run-20230822_212031-vf9fg63b\files\output.log
+2023-08-22 21:25:24,974 INFO    Thread-16 :3336 [dir_watcher.py:_on_file_modified():288] file/dir modified: .\wandb\run-20230822_212031-vf9fg63b\files\output.log
+2023-08-22 21:25:26,995 INFO    Thread-16 :3336 [dir_watcher.py:_on_file_modified():288] file/dir modified: .\wandb\run-20230822_212031-vf9fg63b\files\output.log
+2023-08-22 21:25:28,065 DEBUG   HandlerThread:3336 [handler.py:handle_request():144] handle_request: status_report
+2023-08-22 21:25:29,014 INFO    Thread-16 :3336 [dir_watcher.py:_on_file_modified():288] file/dir modified: .\wandb\run-20230822_212031-vf9fg63b\files\output.log
+2023-08-22 21:25:31,032 INFO    Thread-16 :3336 [dir_watcher.py:_on_file_modified():288] file/dir modified: .\wandb\run-20230822_212031-vf9fg63b\files\output.log
+2023-08-22 21:25:33,052 INFO    Thread-16 :3336 [dir_watcher.py:_on_file_modified():288] file/dir modified: .\wandb\run-20230822_212031-vf9fg63b\files\output.log
+2023-08-22 21:25:33,518 DEBUG   HandlerThread:3336 [handler.py:handle_request():144] handle_request: status_report
+2023-08-22 21:25:34,529 DEBUG   HandlerThread:3336 [handler.py:handle_request():144] handle_request: stop_status
+2023-08-22 21:25:34,529 DEBUG   SenderThread:3336 [sender.py:send_request():406] send_request: stop_status
+2023-08-22 21:25:35,071 INFO    Thread-16 :3336 [dir_watcher.py:_on_file_modified():288] file/dir modified: .\wandb\run-20230822_212031-vf9fg63b\files\output.log
+2023-08-22 21:25:37,084 INFO    Thread-16 :3336 [dir_watcher.py:_on_file_modified():288] file/dir modified: .\wandb\run-20230822_212031-vf9fg63b\files\output.log
+2023-08-22 21:25:38,623 DEBUG   HandlerThread:3336 [handler.py:handle_request():144] handle_request: status_report
+2023-08-22 21:25:39,098 INFO    Thread-16 :3336 [dir_watcher.py:_on_file_modified():288] file/dir modified: .\wandb\run-20230822_212031-vf9fg63b\files\output.log
+2023-08-22 21:25:41,108 INFO    Thread-16 :3336 [dir_watcher.py:_on_file_modified():288] file/dir modified: .\wandb\run-20230822_212031-vf9fg63b\files\output.log
+2023-08-22 21:25:41,644 DEBUG   SenderThread:3336 [sender.py:send():379] send: stats
+2023-08-22 21:25:43,123 INFO    Thread-16 :3336 [dir_watcher.py:_on_file_modified():288] file/dir modified: .\wandb\run-20230822_212031-vf9fg63b\files\output.log
+2023-08-22 21:25:43,791 DEBUG   HandlerThread:3336 [handler.py:handle_request():144] handle_request: status_report
+2023-08-22 21:25:45,142 INFO    Thread-16 :3336 [dir_watcher.py:_on_file_modified():288] file/dir modified: .\wandb\run-20230822_212031-vf9fg63b\files\output.log
+2023-08-22 21:25:47,159 INFO    Thread-16 :3336 [dir_watcher.py:_on_file_modified():288] file/dir modified: .\wandb\run-20230822_212031-vf9fg63b\files\output.log
+2023-08-22 21:25:49,002 DEBUG   HandlerThread:3336 [handler.py:handle_request():144] handle_request: status_report
+2023-08-22 21:25:49,171 INFO    Thread-16 :3336 [dir_watcher.py:_on_file_modified():288] file/dir modified: .\wandb\run-20230822_212031-vf9fg63b\files\output.log
+2023-08-22 21:25:49,533 DEBUG   HandlerThread:3336 [handler.py:handle_request():144] handle_request: stop_status
+2023-08-22 21:25:49,534 DEBUG   SenderThread:3336 [sender.py:send_request():406] send_request: stop_status
+2023-08-22 21:25:51,185 INFO    Thread-16 :3336 [dir_watcher.py:_on_file_modified():288] file/dir modified: .\wandb\run-20230822_212031-vf9fg63b\files\output.log
+2023-08-22 21:25:53,198 INFO    Thread-16 :3336 [dir_watcher.py:_on_file_modified():288] file/dir modified: .\wandb\run-20230822_212031-vf9fg63b\files\output.log
+2023-08-22 21:25:54,390 DEBUG   HandlerThread:3336 [handler.py:handle_request():144] handle_request: status_report
+2023-08-22 21:25:55,209 INFO    Thread-16 :3336 [dir_watcher.py:_on_file_modified():288] file/dir modified: .\wandb\run-20230822_212031-vf9fg63b\files\output.log
+2023-08-22 21:25:57,219 INFO    Thread-16 :3336 [dir_watcher.py:_on_file_modified():288] file/dir modified: .\wandb\run-20230822_212031-vf9fg63b\files\output.log
+2023-08-22 21:25:59,230 INFO    Thread-16 :3336 [dir_watcher.py:_on_file_modified():288] file/dir modified: .\wandb\run-20230822_212031-vf9fg63b\files\output.log
+2023-08-22 21:25:59,641 DEBUG   HandlerThread:3336 [handler.py:handle_request():144] handle_request: status_report
+2023-08-22 21:26:01,249 INFO    Thread-16 :3336 [dir_watcher.py:_on_file_modified():288] file/dir modified: .\wandb\run-20230822_212031-vf9fg63b\files\output.log
+2023-08-22 21:26:03,261 INFO    Thread-16 :3336 [dir_watcher.py:_on_file_modified():288] file/dir modified: .\wandb\run-20230822_212031-vf9fg63b\files\output.log
+2023-08-22 21:26:04,535 DEBUG   HandlerThread:3336 [handler.py:handle_request():144] handle_request: stop_status
+2023-08-22 21:26:04,535 DEBUG   SenderThread:3336 [sender.py:send_request():406] send_request: stop_status
+2023-08-22 21:26:04,908 DEBUG   HandlerThread:3336 [handler.py:handle_request():144] handle_request: status_report
+2023-08-22 21:26:05,275 INFO    Thread-16 :3336 [dir_watcher.py:_on_file_modified():288] file/dir modified: .\wandb\run-20230822_212031-vf9fg63b\files\output.log
+2023-08-22 21:26:07,292 INFO    Thread-16 :3336 [dir_watcher.py:_on_file_modified():288] file/dir modified: .\wandb\run-20230822_212031-vf9fg63b\files\output.log
+2023-08-22 21:26:09,310 INFO    Thread-16 :3336 [dir_watcher.py:_on_file_modified():288] file/dir modified: .\wandb\run-20230822_212031-vf9fg63b\files\output.log
+2023-08-22 21:26:10,307 DEBUG   HandlerThread:3336 [handler.py:handle_request():144] handle_request: status_report
+2023-08-22 21:26:11,320 INFO    Thread-16 :3336 [dir_watcher.py:_on_file_modified():288] file/dir modified: .\wandb\run-20230822_212031-vf9fg63b\files\output.log
+2023-08-22 21:26:11,650 DEBUG   SenderThread:3336 [sender.py:send():379] send: stats
+2023-08-22 21:26:13,335 INFO    Thread-16 :3336 [dir_watcher.py:_on_file_modified():288] file/dir modified: .\wandb\run-20230822_212031-vf9fg63b\files\output.log
+2023-08-22 21:26:15,351 INFO    Thread-16 :3336 [dir_watcher.py:_on_file_modified():288] file/dir modified: .\wandb\run-20230822_212031-vf9fg63b\files\output.log
+2023-08-22 21:26:15,525 DEBUG   HandlerThread:3336 [handler.py:handle_request():144] handle_request: status_report
+2023-08-22 21:26:17,365 INFO    Thread-16 :3336 [dir_watcher.py:_on_file_modified():288] file/dir modified: .\wandb\run-20230822_212031-vf9fg63b\files\output.log
+2023-08-22 21:26:19,381 INFO    Thread-16 :3336 [dir_watcher.py:_on_file_modified():288] file/dir modified: .\wandb\run-20230822_212031-vf9fg63b\files\output.log
+2023-08-22 21:26:19,540 DEBUG   HandlerThread:3336 [handler.py:handle_request():144] handle_request: stop_status
+2023-08-22 21:26:19,540 DEBUG   SenderThread:3336 [sender.py:send_request():406] send_request: stop_status
+2023-08-22 21:26:20,996 DEBUG   HandlerThread:3336 [handler.py:handle_request():144] handle_request: status_report
+2023-08-22 21:26:21,398 INFO    Thread-16 :3336 [dir_watcher.py:_on_file_modified():288] file/dir modified: .\wandb\run-20230822_212031-vf9fg63b\files\output.log
+2023-08-22 21:26:23,407 INFO    Thread-16 :3336 [dir_watcher.py:_on_file_modified():288] file/dir modified: .\wandb\run-20230822_212031-vf9fg63b\files\output.log
+2023-08-22 21:26:25,420 INFO    Thread-16 :3336 [dir_watcher.py:_on_file_modified():288] file/dir modified: .\wandb\run-20230822_212031-vf9fg63b\files\output.log
+2023-08-22 21:26:26,249 DEBUG   HandlerThread:3336 [handler.py:handle_request():144] handle_request: status_report
+2023-08-22 21:26:27,438 INFO    Thread-16 :3336 [dir_watcher.py:_on_file_modified():288] file/dir modified: .\wandb\run-20230822_212031-vf9fg63b\files\output.log
+2023-08-22 21:26:29,455 INFO    Thread-16 :3336 [dir_watcher.py:_on_file_modified():288] file/dir modified: .\wandb\run-20230822_212031-vf9fg63b\files\output.log
+2023-08-22 21:26:31,473 INFO    Thread-16 :3336 [dir_watcher.py:_on_file_modified():288] file/dir modified: .\wandb\run-20230822_212031-vf9fg63b\files\output.log
+2023-08-22 21:26:31,620 DEBUG   HandlerThread:3336 [handler.py:handle_request():144] handle_request: status_report
+2023-08-22 21:26:33,492 INFO    Thread-16 :3336 [dir_watcher.py:_on_file_modified():288] file/dir modified: .\wandb\run-20230822_212031-vf9fg63b\files\output.log
+2023-08-22 21:26:34,885 DEBUG   HandlerThread:3336 [handler.py:handle_request():144] handle_request: stop_status
+2023-08-22 21:26:34,885 DEBUG   SenderThread:3336 [sender.py:send_request():406] send_request: stop_status
+2023-08-22 21:26:35,508 INFO    Thread-16 :3336 [dir_watcher.py:_on_file_modified():288] file/dir modified: .\wandb\run-20230822_212031-vf9fg63b\files\output.log
+2023-08-22 21:26:37,055 DEBUG   HandlerThread:3336 [handler.py:handle_request():144] handle_request: status_report
+2023-08-22 21:26:37,522 INFO    Thread-16 :3336 [dir_watcher.py:_on_file_modified():288] file/dir modified: .\wandb\run-20230822_212031-vf9fg63b\files\output.log
+2023-08-22 21:26:39,542 INFO    Thread-16 :3336 [dir_watcher.py:_on_file_modified():288] file/dir modified: .\wandb\run-20230822_212031-vf9fg63b\files\output.log
+2023-08-22 21:26:41,558 INFO    Thread-16 :3336 [dir_watcher.py:_on_file_modified():288] file/dir modified: .\wandb\run-20230822_212031-vf9fg63b\files\output.log
+2023-08-22 21:26:41,652 DEBUG   SenderThread:3336 [sender.py:send():379] send: stats
+2023-08-22 21:26:42,353 DEBUG   HandlerThread:3336 [handler.py:handle_request():144] handle_request: status_report
+2023-08-22 21:26:43,562 INFO    Thread-16 :3336 [dir_watcher.py:_on_file_modified():288] file/dir modified: .\wandb\run-20230822_212031-vf9fg63b\files\output.log
+2023-08-22 21:26:45,585 INFO    Thread-16 :3336 [dir_watcher.py:_on_file_modified():288] file/dir modified: .\wandb\run-20230822_212031-vf9fg63b\files\output.log
+2023-08-22 21:26:47,592 INFO    Thread-16 :3336 [dir_watcher.py:_on_file_modified():288] file/dir modified: .\wandb\run-20230822_212031-vf9fg63b\files\output.log
+2023-08-22 21:26:47,616 DEBUG   HandlerThread:3336 [handler.py:handle_request():144] handle_request: status_report
+2023-08-22 21:26:49,609 INFO    Thread-16 :3336 [dir_watcher.py:_on_file_modified():288] file/dir modified: .\wandb\run-20230822_212031-vf9fg63b\files\output.log
+2023-08-22 21:26:49,876 DEBUG   HandlerThread:3336 [handler.py:handle_request():144] handle_request: stop_status
+2023-08-22 21:26:49,877 DEBUG   SenderThread:3336 [sender.py:send_request():406] send_request: stop_status
+2023-08-22 21:26:51,621 INFO    Thread-16 :3336 [dir_watcher.py:_on_file_modified():288] file/dir modified: .\wandb\run-20230822_212031-vf9fg63b\files\output.log
+2023-08-22 21:26:52,968 DEBUG   HandlerThread:3336 [handler.py:handle_request():144] handle_request: status_report
+2023-08-22 21:26:53,639 INFO    Thread-16 :3336 [dir_watcher.py:_on_file_modified():288] file/dir modified: .\wandb\run-20230822_212031-vf9fg63b\files\output.log
+2023-08-22 21:26:55,649 INFO    Thread-16 :3336 [dir_watcher.py:_on_file_modified():288] file/dir modified: .\wandb\run-20230822_212031-vf9fg63b\files\output.log
+2023-08-22 21:26:57,666 INFO    Thread-16 :3336 [dir_watcher.py:_on_file_modified():288] file/dir modified: .\wandb\run-20230822_212031-vf9fg63b\files\output.log
+2023-08-22 21:26:58,408 DEBUG   HandlerThread:3336 [handler.py:handle_request():144] handle_request: status_report
+2023-08-22 21:26:59,679 INFO    Thread-16 :3336 [dir_watcher.py:_on_file_modified():288] file/dir modified: .\wandb\run-20230822_212031-vf9fg63b\files\output.log
+2023-08-22 21:27:01,689 INFO    Thread-16 :3336 [dir_watcher.py:_on_file_modified():288] file/dir modified: .\wandb\run-20230822_212031-vf9fg63b\files\output.log
+2023-08-22 21:27:03,703 INFO    Thread-16 :3336 [dir_watcher.py:_on_file_modified():288] file/dir modified: .\wandb\run-20230822_212031-vf9fg63b\files\output.log
+2023-08-22 21:27:03,708 DEBUG   HandlerThread:3336 [handler.py:handle_request():144] handle_request: status_report
+2023-08-22 21:27:04,896 DEBUG   HandlerThread:3336 [handler.py:handle_request():144] handle_request: stop_status
+2023-08-22 21:27:04,897 DEBUG   SenderThread:3336 [sender.py:send_request():406] send_request: stop_status
+2023-08-22 21:27:05,716 INFO    Thread-16 :3336 [dir_watcher.py:_on_file_modified():288] file/dir modified: .\wandb\run-20230822_212031-vf9fg63b\files\output.log
+2023-08-22 21:27:07,729 INFO    Thread-16 :3336 [dir_watcher.py:_on_file_modified():288] file/dir modified: .\wandb\run-20230822_212031-vf9fg63b\files\output.log
+2023-08-22 21:27:08,891 DEBUG   HandlerThread:3336 [handler.py:handle_request():144] handle_request: status_report
+2023-08-22 21:27:09,759 INFO    Thread-16 :3336 [dir_watcher.py:_on_file_modified():288] file/dir modified: .\wandb\run-20230822_212031-vf9fg63b\files\output.log
+2023-08-22 21:27:11,666 DEBUG   SenderThread:3336 [sender.py:send():379] send: stats
+2023-08-22 21:27:11,775 INFO    Thread-16 :3336 [dir_watcher.py:_on_file_modified():288] file/dir modified: .\wandb\run-20230822_212031-vf9fg63b\files\output.log
+2023-08-22 21:27:13,805 INFO    Thread-16 :3336 [dir_watcher.py:_on_file_modified():288] file/dir modified: .\wandb\run-20230822_212031-vf9fg63b\files\output.log
+2023-08-22 21:27:14,028 DEBUG   HandlerThread:3336 [handler.py:handle_request():144] handle_request: status_report
+2023-08-22 21:27:15,832 INFO    Thread-16 :3336 [dir_watcher.py:_on_file_modified():288] file/dir modified: .\wandb\run-20230822_212031-vf9fg63b\files\output.log
+2023-08-22 21:27:17,850 INFO    Thread-16 :3336 [dir_watcher.py:_on_file_modified():288] file/dir modified: .\wandb\run-20230822_212031-vf9fg63b\files\output.log
+2023-08-22 21:27:19,278 DEBUG   HandlerThread:3336 [handler.py:handle_request():144] handle_request: status_report
+2023-08-22 21:27:19,863 INFO    Thread-16 :3336 [dir_watcher.py:_on_file_modified():288] file/dir modified: .\wandb\run-20230822_212031-vf9fg63b\files\output.log
+2023-08-22 21:27:19,895 DEBUG   HandlerThread:3336 [handler.py:handle_request():144] handle_request: stop_status
+2023-08-22 21:27:19,895 DEBUG   SenderThread:3336 [sender.py:send_request():406] send_request: stop_status
+2023-08-22 21:27:21,875 INFO    Thread-16 :3336 [dir_watcher.py:_on_file_modified():288] file/dir modified: .\wandb\run-20230822_212031-vf9fg63b\files\output.log
+2023-08-22 21:27:23,887 INFO    Thread-16 :3336 [dir_watcher.py:_on_file_modified():288] file/dir modified: .\wandb\run-20230822_212031-vf9fg63b\files\output.log
+2023-08-22 21:27:24,919 DEBUG   HandlerThread:3336 [handler.py:handle_request():144] handle_request: status_report
+2023-08-22 21:27:25,196 DEBUG   HandlerThread:3336 [handler.py:handle_request():144] handle_request: pause
+2023-08-22 21:27:25,196 INFO    HandlerThread:3336 [handler.py:handle_request_pause():728] stopping system metrics thread or process
+2023-08-22 21:27:25,196 INFO    HandlerThread:3336 [system_monitor.py:finish():190] Stopping system monitor
+2023-08-22 21:27:25,196 INFO    HandlerThread:3336 [interfaces.py:finish():202] Joined cpu monitor
+2023-08-22 21:27:25,196 DEBUG   SystemMonitor:3336 [system_monitor.py:_start():166] Finished system metrics aggregation loop
+2023-08-22 21:27:25,196 DEBUG   SystemMonitor:3336 [system_monitor.py:_start():170] Publishing last batch of metrics
+2023-08-22 21:27:25,196 INFO    HandlerThread:3336 [interfaces.py:finish():202] Joined disk monitor
+2023-08-22 21:27:25,230 INFO    HandlerThread:3336 [interfaces.py:finish():202] Joined gpu monitor
+2023-08-22 21:27:25,230 INFO    HandlerThread:3336 [interfaces.py:finish():202] Joined memory monitor
+2023-08-22 21:27:25,230 INFO    HandlerThread:3336 [interfaces.py:finish():202] Joined network monitor
+2023-08-22 21:27:25,231 DEBUG   SenderThread:3336 [sender.py:send():379] send: stats
+2023-08-22 21:27:30,294 DEBUG   HandlerThread:3336 [handler.py:handle_request():144] handle_request: status_report
+2023-08-22 21:27:34,902 DEBUG   HandlerThread:3336 [handler.py:handle_request():144] handle_request: stop_status
+2023-08-22 21:27:34,904 DEBUG   SenderThread:3336 [sender.py:send_request():406] send_request: stop_status
+2023-08-22 21:27:35,297 DEBUG   HandlerThread:3336 [handler.py:handle_request():144] handle_request: status_report
+2023-08-22 21:27:40,339 DEBUG   HandlerThread:3336 [handler.py:handle_request():144] handle_request: status_report
+2023-08-22 21:27:45,376 DEBUG   HandlerThread:3336 [handler.py:handle_request():144] handle_request: status_report
+2023-08-22 21:27:49,915 DEBUG   HandlerThread:3336 [handler.py:handle_request():144] handle_request: stop_status
+2023-08-22 21:27:49,915 DEBUG   SenderThread:3336 [sender.py:send_request():406] send_request: stop_status
+2023-08-22 21:27:51,299 DEBUG   HandlerThread:3336 [handler.py:handle_request():144] handle_request: status_report
+2023-08-22 21:27:56,332 DEBUG   HandlerThread:3336 [handler.py:handle_request():144] handle_request: status_report
+2023-08-22 21:28:01,400 DEBUG   HandlerThread:3336 [handler.py:handle_request():144] handle_request: status_report
+2023-08-22 21:28:04,915 DEBUG   HandlerThread:3336 [handler.py:handle_request():144] handle_request: stop_status
+2023-08-22 21:28:04,915 DEBUG   SenderThread:3336 [sender.py:send_request():406] send_request: stop_status
+2023-08-22 21:28:07,264 DEBUG   HandlerThread:3336 [handler.py:handle_request():144] handle_request: status_report
+2023-08-22 21:28:12,321 DEBUG   HandlerThread:3336 [handler.py:handle_request():144] handle_request: status_report
+2023-08-22 21:28:17,365 DEBUG   HandlerThread:3336 [handler.py:handle_request():144] handle_request: status_report
+2023-08-22 21:28:19,920 DEBUG   HandlerThread:3336 [handler.py:handle_request():144] handle_request: stop_status
+2023-08-22 21:28:19,920 DEBUG   SenderThread:3336 [sender.py:send_request():406] send_request: stop_status
+2023-08-22 21:28:23,269 DEBUG   HandlerThread:3336 [handler.py:handle_request():144] handle_request: status_report
+2023-08-22 21:28:28,304 DEBUG   HandlerThread:3336 [handler.py:handle_request():144] handle_request: status_report
+2023-08-22 21:28:33,360 DEBUG   HandlerThread:3336 [handler.py:handle_request():144] handle_request: status_report
+2023-08-22 21:28:34,929 DEBUG   HandlerThread:3336 [handler.py:handle_request():144] handle_request: stop_status
+2023-08-22 21:28:34,929 DEBUG   SenderThread:3336 [sender.py:send_request():406] send_request: stop_status
+2023-08-22 21:28:39,281 DEBUG   HandlerThread:3336 [handler.py:handle_request():144] handle_request: status_report
+2023-08-22 21:28:44,309 DEBUG   HandlerThread:3336 [handler.py:handle_request():144] handle_request: status_report
+2023-08-22 21:28:49,376 DEBUG   HandlerThread:3336 [handler.py:handle_request():144] handle_request: status_report
+2023-08-22 21:28:49,938 DEBUG   HandlerThread:3336 [handler.py:handle_request():144] handle_request: stop_status
+2023-08-22 21:28:49,938 DEBUG   SenderThread:3336 [sender.py:send_request():406] send_request: stop_status
+2023-08-22 21:28:55,287 DEBUG   HandlerThread:3336 [handler.py:handle_request():144] handle_request: status_report
+2023-08-22 21:29:00,336 DEBUG   HandlerThread:3336 [handler.py:handle_request():144] handle_request: status_report
+2023-08-22 21:29:04,955 DEBUG   HandlerThread:3336 [handler.py:handle_request():144] handle_request: stop_status
+2023-08-22 21:29:04,955 DEBUG   SenderThread:3336 [sender.py:send_request():406] send_request: stop_status
+2023-08-22 21:29:06,314 DEBUG   HandlerThread:3336 [handler.py:handle_request():144] handle_request: status_report
+2023-08-22 21:29:11,361 DEBUG   HandlerThread:3336 [handler.py:handle_request():144] handle_request: status_report
+2023-08-22 21:29:16,425 DEBUG   HandlerThread:3336 [handler.py:handle_request():144] handle_request: status_report
+2023-08-22 21:29:19,952 DEBUG   HandlerThread:3336 [handler.py:handle_request():144] handle_request: stop_status
+2023-08-22 21:29:19,952 DEBUG   SenderThread:3336 [sender.py:send_request():406] send_request: stop_status
+2023-08-22 21:29:22,372 DEBUG   HandlerThread:3336 [handler.py:handle_request():144] handle_request: status_report
+2023-08-22 21:29:27,405 DEBUG   HandlerThread:3336 [handler.py:handle_request():144] handle_request: status_report
+2023-08-22 21:29:32,474 DEBUG   HandlerThread:3336 [handler.py:handle_request():144] handle_request: status_report
+2023-08-22 21:29:34,968 DEBUG   HandlerThread:3336 [handler.py:handle_request():144] handle_request: stop_status
+2023-08-22 21:29:34,968 DEBUG   SenderThread:3336 [sender.py:send_request():406] send_request: stop_status
+2023-08-22 21:29:38,384 DEBUG   HandlerThread:3336 [handler.py:handle_request():144] handle_request: status_report
+2023-08-22 21:29:43,427 DEBUG   HandlerThread:3336 [handler.py:handle_request():144] handle_request: status_report
+2023-08-22 21:29:48,462 DEBUG   HandlerThread:3336 [handler.py:handle_request():144] handle_request: status_report
+2023-08-22 21:29:49,994 DEBUG   HandlerThread:3336 [handler.py:handle_request():144] handle_request: stop_status
+2023-08-22 21:29:49,994 DEBUG   SenderThread:3336 [sender.py:send_request():406] send_request: stop_status
+2023-08-22 21:29:54,407 DEBUG   HandlerThread:3336 [handler.py:handle_request():144] handle_request: status_report
+2023-08-22 21:29:59,444 DEBUG   HandlerThread:3336 [handler.py:handle_request():144] handle_request: status_report
+2023-08-22 21:30:04,498 DEBUG   HandlerThread:3336 [handler.py:handle_request():144] handle_request: status_report
+2023-08-22 21:30:04,996 DEBUG   HandlerThread:3336 [handler.py:handle_request():144] handle_request: stop_status
+2023-08-22 21:30:04,996 DEBUG   SenderThread:3336 [sender.py:send_request():406] send_request: stop_status
+2023-08-22 21:30:10,441 DEBUG   HandlerThread:3336 [handler.py:handle_request():144] handle_request: status_report
+2023-08-22 21:30:15,504 DEBUG   HandlerThread:3336 [handler.py:handle_request():144] handle_request: status_report
+2023-08-22 21:30:20,007 DEBUG   HandlerThread:3336 [handler.py:handle_request():144] handle_request: stop_status
+2023-08-22 21:30:20,007 DEBUG   SenderThread:3336 [sender.py:send_request():406] send_request: stop_status
+2023-08-22 21:30:21,424 DEBUG   HandlerThread:3336 [handler.py:handle_request():144] handle_request: status_report
+2023-08-22 21:30:26,452 DEBUG   HandlerThread:3336 [handler.py:handle_request():144] handle_request: status_report
+2023-08-22 21:30:31,482 DEBUG   HandlerThread:3336 [handler.py:handle_request():144] handle_request: status_report
+2023-08-22 21:30:35,003 DEBUG   HandlerThread:3336 [handler.py:handle_request():144] handle_request: stop_status
+2023-08-22 21:30:35,003 DEBUG   SenderThread:3336 [sender.py:send_request():406] send_request: stop_status
+2023-08-22 21:30:37,370 DEBUG   HandlerThread:3336 [handler.py:handle_request():144] handle_request: status_report
+2023-08-22 21:30:42,415 DEBUG   HandlerThread:3336 [handler.py:handle_request():144] handle_request: status_report
+2023-08-22 21:30:47,468 DEBUG   HandlerThread:3336 [handler.py:handle_request():144] handle_request: status_report
+2023-08-22 21:30:50,013 DEBUG   HandlerThread:3336 [handler.py:handle_request():144] handle_request: stop_status
+2023-08-22 21:30:50,013 DEBUG   SenderThread:3336 [sender.py:send_request():406] send_request: stop_status
+2023-08-22 21:30:53,374 DEBUG   HandlerThread:3336 [handler.py:handle_request():144] handle_request: status_report
+2023-08-22 21:30:58,435 DEBUG   HandlerThread:3336 [handler.py:handle_request():144] handle_request: status_report
+2023-08-22 21:31:03,486 DEBUG   HandlerThread:3336 [handler.py:handle_request():144] handle_request: status_report
+2023-08-22 21:31:05,036 DEBUG   HandlerThread:3336 [handler.py:handle_request():144] handle_request: stop_status
+2023-08-22 21:31:05,036 DEBUG   SenderThread:3336 [sender.py:send_request():406] send_request: stop_status
+2023-08-22 21:31:09,466 DEBUG   HandlerThread:3336 [handler.py:handle_request():144] handle_request: status_report
+2023-08-22 21:31:14,511 DEBUG   HandlerThread:3336 [handler.py:handle_request():144] handle_request: status_report

@@ -8,6 +8,7 @@ from pytorch_lightning import LightningModule, Trainer, LightningDataModule
 import config
 from loss import YoloLoss
 from utils import cells_to_bboxes,non_max_suppression, plot_image
+import wandb
 """ 
 Information about architecture config:
 Tuple is structured by (filters, kernel_size, stride) 
@@ -116,6 +117,7 @@ class Lightning_YOLO(LightningModule):
         self.threshold=config.CONF_THRESHOLD
         self.train_state = []
         self.test_state = []
+        self.counter = 1
 
     def forward(self, x):
         outputs = []  # for each scale
@@ -230,7 +232,9 @@ class Lightning_YOLO(LightningModule):
                 nms_boxes = non_max_suppression(
                     bboxes[i], iou_threshold=iou_thresh, threshold=thresh, box_format="midpoint",
                 )
-                plot_image(x[i].permute(1,2,0).detach().cpu(), nms_boxes)
+                myfig = plot_image(x[i].permute(1,2,0).detach().cpu(), nms_boxes)
+                # self.log({"training_inference_image":[wandb.Image(myfig, caption="training_inference_image")]})
+                self.counter+=1
         return loss
     
     def on_train_epoch_end(self):
@@ -297,7 +301,9 @@ class Lightning_YOLO(LightningModule):
                 nms_boxes = non_max_suppression(
                     bboxes[i], iou_threshold=iou_thresh, threshold=thresh, box_format="midpoint",
                 )
-                plot_image(x[i].permute(1,2,0).detach().cpu(), nms_boxes)
+                myfig = plot_image(x[i].permute(1,2,0).detach().cpu(), nms_boxes)
+                # self.log({"testing_inference_image":[wandb.Image(myfig, caption="testing_inference_image")]})
+                
             
             
         

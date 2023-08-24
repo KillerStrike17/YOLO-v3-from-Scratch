@@ -275,6 +275,7 @@ def plot_image(image, boxes):
         )
 
     plt.show()
+    return fig
 
 
 def get_evaluation_bboxes(

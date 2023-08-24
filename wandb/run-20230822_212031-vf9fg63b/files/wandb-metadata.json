@@ -1,0 +1,49 @@
+{
+    "os": "Windows-10-10.0.22621-SP0",
+    "python": "3.10.12",
+    "heartbeatAt": "2023-08-22T15:50:33.245009",
+    "startedAt": "2023-08-22T15:50:31.501233",
+    "docker": null,
+    "cuda": null,
+    "args": [],
+    "state": "running",
+    "program": "<python with no main file>",
+    "git": {
+        "remote": "https://github.com/KillerStrike17/YOLO-v3-from-Scratch.git",
+        "commit": "23fc9ace880707207d1d624394594d173d945337"
+    },
+    "email": "shubham.agnihotri1997@gmail.com",
+    "root": "D:/Github/YOLO-v3-from-Scratch",
+    "host": "DESKTOP-73R3I2T",
+    "username": "this pc",
+    "executable": "d:\\Anaconda\\envs\\theschoolofai\\python.exe",
+    "cpu_count": 8,
+    "cpu_count_logical": 16,
+    "cpu_freq": {
+        "current": 3600.0,
+        "min": 0.0,
+        "max": 3600.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 3600.0,
+            "min": 0.0,
+            "max": 3600.0
+        }
+    ],
+    "disk": {
+        "total": 495.81249618530273,
+        "used": 489.5328903198242
+    },
+    "gpu": "NVIDIA GeForce RTX 2080 Ti",
+    "gpu_count": 1,
+    "gpu_devices": [
+        {
+            "name": "NVIDIA GeForce RTX 2080 Ti",
+            "memory_total": 11811160064
+        }
+    ],
+    "memory": {
+        "total": 31.93851089477539
+    }
+}
